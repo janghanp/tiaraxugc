@@ -1,0 +1,31 @@
+import ServiceItem from "@/components/ServiceItem";
+
+export default function Services() {
+  return (
+    <div className={"mt-32 text-center"}>
+      <div className={"text-5xl font-bold text-primary"}>Services</div>
+      <div className={"text-secondary mt-1 text-lg"}>Something else in mind? Feel free to ask! </div>
+      <div className={"grid grid-cols-2 mt-10 gap-20"}>
+        <div className={"col-span-1"}>
+          <div className={"text-left text-xl font-semibold text-secondary"}>UGC Videos</div>
+          <div className={"grid grid-cols-3 gap-3 w-full mt-3"}>
+            <ServiceItem title={"Paid ads"} />
+            <ServiceItem title={"Unboxing"} />
+            <ServiceItem title={"Problem/solution"} />
+            <ServiceItem title={"Organic content"} />
+            <ServiceItem title={"Testimonial/review"} />
+            <ServiceItem title={"How-to/demo"} />
+          </div>
+        </div>
+        <div className={"col-span-1"}>
+          <div className={"text-left text-xl font-semibold text-secondary"}>Add-ons</div>
+          <div className={"grid grid-cols-3 gap-3 w-full mt-3"}>
+            <ServiceItem title={"Scriptwriting"} />
+            <ServiceItem title={"Whitelisting"} />
+            <ServiceItem title={"Voiceover"} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
