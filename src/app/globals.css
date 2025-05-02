@@ -4,6 +4,7 @@
   --color-primary: #5e5343;
   --color-secondary: #81715b;
   --color-underline: #3f4f44;
+  --color-highlight: #b3b4d2;
 }
 
 .curved-underline {
@@ -14,7 +15,7 @@
   content: "";
   position: absolute;
   width: 100%;
-  border-top: solid 8px rgba(255, 131, 127, 0.8);
+  border-top: solid 8px var(--color-highlight);
   left: 0;
   bottom: -25px;
   border-radius: 50%;
@@ -35,7 +36,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--color-primary);
+  background-color: var(--color-highlight);
   transform: rotate(-0.8deg); /* control the rotation angle */
   z-index: -1;
   transform-origin: center;

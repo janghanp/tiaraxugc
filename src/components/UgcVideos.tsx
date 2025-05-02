@@ -1,9 +1,14 @@
 import ProductVideoItem from "@/components/ProductVideoItem";
+import TitleHighlightArrow from "@/components/TitleHighlightArrow";
 
 export default function UgcVideos() {
   return (
     <div className={"mt-32 text-center"}>
-      <div className={"text-5xl font-bold text-primary"}>UGC video examples</div>
+      <div className={"flex items-center justify-center gap-2"}>
+        <TitleHighlightArrow direction={"left"} />
+        <div className={"text-5xl font-bold text-primary"}>UGC video examples</div>
+        <TitleHighlightArrow direction={"right"} />
+      </div>
       <div className={"flex w-full gap-5 mt-10 text-secondary"}>
         <ProductVideoItem
           videoSrc={"/videos/intro_tiaraxUGC.mp4"}

@@ -14,12 +14,11 @@ export default function Introduction() {
   return (
     <div className={"flex items-center w-full"}>
       <div className={"flex-1"}>
-        <div className={`text-8xl font-bold curved-underline inline-block text-gray-900 ${chonburi.className}`}>TIARA</div>
-
+        <div className={`text-8xl font-bold curved-underline inline-block text-primary ${chonburi.className}`}>TIARA</div>
         <p className={"mt-7 text-4xl leading-14  text-neutral-600"}>
-          <span className={"px-2"}>
-            <span className={"rotated-bg p-2"}>Authentic, soft-toned</span>
-            UGC
+          <span>
+            <span className={"p-2 rotated-bg leading-10"}>Authentic, soft-toned</span>
+            {" "} UGC {" "}
           </span>
           for <b className={"text-black"}>beauty</b>, <b className={"text-black"}>food</b>, &{" "}
           <b className={"text-black"}>lifestyle</b> <span>brands - and beyond!</span>
