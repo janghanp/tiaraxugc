@@ -21,7 +21,7 @@ export default function ProductVideoItem({ videoSrc, title1, title2, description
         />
       )}
       <div className={"mt-3 font-bold text-xl text-primary"}>{title1}</div>
-      <div className={"-mt-1"}>{title2}</div>
+      <div className={"-mt-1 text-[16px] font-semibold"}>{title2}</div>
       <div className={"mt-2 text-sm"}>
         <i>{description}</i>
       </div>

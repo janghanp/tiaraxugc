@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Domine } from "next/font/google";
+import { Domine, Forum, Vesper_Libre } from "next/font/google";
 import "./globals.css";
 
-const domine = Domine({
-  weight: "variable",
+const vesper = Vesper_Libre({
+  weight: ["400", "500", "700", "900"],
   subsets: ["latin"],
 });
 
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${domine.className} antialiased bg-gradient-to-r from-[#efe9e4] via-[#f5f2ef] to-[#dcd4cd] to-80%`}
+        className={`${vesper.className} antialiased bg-gradient-to-r from-[#efe9e4] via-[#f5f2ef] to-[#dcd4cd] to-80%`}
       >
         {children}
       </body>

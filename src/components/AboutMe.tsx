@@ -6,7 +6,7 @@ export default function AboutMe() {
       <div className={"text-5xl font-bold text-primary text-center mb-14"}>About me</div>
       <div
         className={
-          "w-full max-w-[850px] mx-auto text-xl text-primary leading-8 flex flex-col gap-7"
+          "w-full max-w-[850px] mx-auto text-2xl text-primary leading-8 flex flex-col gap-7"
         }
       >
         <p>

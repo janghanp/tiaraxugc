@@ -4,7 +4,7 @@ import TitleHighlightArrow from "@/components/TitleHighlightArrow";
 export default function UgcVideos() {
   return (
     <div className={"mt-32 text-center"}>
-      <div className={"flex items-center justify-center gap-2"}>
+      <div className={"flex items-center justify-center gap-3"}>
         <TitleHighlightArrow direction={"left"} />
         <div className={"text-5xl font-bold text-primary"}>UGC video examples</div>
         <TitleHighlightArrow direction={"right"} />
