@@ -1,15 +1,28 @@
 import ProductVideoItem from "@/components/ProductVideoItem";
 import TitleHighlightArrow from "@/components/TitleHighlightArrow";
+import { motion } from "motion/react";
 
 export default function UgcVideos() {
   return (
     <div className={"mt-32 text-center"}>
-      <div className={"flex items-center justify-center gap-3"}>
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className={"flex items-center justify-center gap-3"}
+      >
         <TitleHighlightArrow direction={"left"} />
         <div className={"text-5xl font-bold text-primary"}>UGC video examples</div>
         <TitleHighlightArrow direction={"right"} />
-      </div>
-      <div className={"flex w-full gap-5 mt-10 text-secondary"}>
+      </motion.div>
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
+        className={"flex w-full gap-5 mt-10 text-secondary"}
+      >
         <ProductVideoItem
           videoSrc={"/videos/intro_tiaraxUGC.mp4"}
           title1={"Intro"}
@@ -42,7 +55,7 @@ export default function UgcVideos() {
             "Highlights a common skincare concern and offers a solution with key product benefits"
           }
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

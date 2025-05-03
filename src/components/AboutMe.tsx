@@ -1,10 +1,23 @@
 import UnderlineImage from "@/components/UnderlineImage";
+import { motion } from "motion/react";
 
 export default function AboutMe() {
   return (
     <div className={"w-full mt-32"}>
-      <div className={"text-5xl font-bold text-primary text-center mb-14"}>About me</div>
-      <div
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className={"text-5xl font-bold text-primary text-center mb-14"}
+      >
+        About me
+      </motion.div>
+      <motion.div
+        viewport={{ once: true }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.6 }}
         className={
           "w-full max-w-[850px] mx-auto text-2xl text-primary leading-8 flex flex-col gap-7"
         }
@@ -26,7 +39,7 @@ export default function AboutMe() {
           looking to connect with Korean-speaking audiences, I&#39;d love to help with that too.
         </p>
         <p>Let’s create something that genuinely connects 🤍</p>
-      </div>
+      </motion.div>
       <div className={"w-full flex items-center justify-center mt-8"}>
         <UnderlineImage />
       </div>

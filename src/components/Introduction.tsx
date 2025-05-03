@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { Chonburi } from "next/font/google";
+import { motion } from "motion/react";
 
 const chonburi = Chonburi({
   weight: "400",
@@ -14,19 +15,34 @@ export default function Introduction() {
   return (
     <div className={"flex items-center w-full"}>
       <div className={"flex-1"}>
-        <div
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
           className={`text-8xl font-bold curved-underline inline-block text-primary ${chonburi.className}`}
         >
           TIARA
-        </div>
-        <p className={"mt-7 text-5xl leading-14  text-neutral-600"}>
+        </motion.div>
+        <motion.p
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className={"mt-7 text-5xl leading-14  text-neutral-600"}
+        >
           <span className={"inline-block mb-1.5"}>
-            <span className={"pt-3 -pb-3 px-1.5 rotated-bg leading-12"}>Authentic, soft-toned</span> UGC{" "}
+            <span className={"pt-3 -pb-3 px-1.5 rotated-bg leading-12"}>Authentic, soft-toned</span>{" "}
+            UGC{" "}
           </span>
           for <b className={"text-black"}>beauty</b>, <b className={"text-black"}>food</b>, &{" "}
           <b className={"text-black"}>lifestyle</b> <span>brands - and beyond!</span>
-        </p>
-        <div
+        </motion.p>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           className={
             "flex flex-1 items-center justify-start gap-5 text-md tracking-wide font-semibold mt-5 text-primary"
           }
@@ -66,12 +82,18 @@ export default function Introduction() {
           >
             <HiOutlineMail size={40} />
           </a>
-        </div>
+        </motion.div>
       </div>
       <div className={"flex-1 flex items-center justify-center"}>
-        <div className={"w-[450px] h-[450px] rounded-full overflow-hidden relative"}>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, x: 30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className={"w-[450px] h-[450px] rounded-full overflow-hidden relative"}
+        >
           <Image src={"/images/tiara.png"} alt={"tiara"} fill priority className={"object-cover"} />
-        </div>
+        </motion.div>
       </div>
     </div>
   );
