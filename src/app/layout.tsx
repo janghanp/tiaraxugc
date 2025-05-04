@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Vesper_Libre } from "next/font/google";
 import "./globals.css";
 import { ReactNode } from "react";
+import Script from "next/script";
 
 const vesper = Vesper_Libre({
   weight: ["400", "500", "700", "900"],
@@ -49,6 +50,26 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-C90DYHRWHC"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-C90DYHRWHC', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
+      </head>
       <body
         className={`${vesper.className} antialiased bg-gradient-to-r from-[#efe9e4] via-[#f5f2ef] to-[#dcd4cd] to-80% bg-no-repeat`}
       >
