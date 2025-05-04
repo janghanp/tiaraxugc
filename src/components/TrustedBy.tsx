@@ -3,13 +3,13 @@ import { motion } from "motion/react";
 
 export default function TrustedBy() {
   return (
-    <div className={"mt-32 text-center"}>
+    <div className={"mt-32 text-center px-10"}>
       <motion.div
         viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className={"text-5xl font-bold text-primary"}
+        className={"text-4xl lg:text-5xl font-bold text-primary"}
       >
         Trusted by...
       </motion.div>
@@ -18,7 +18,7 @@ export default function TrustedBy() {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className={"w-ful flex items-center justify-center gap-10 mt-5"}
+        className={"w-ful flex flex-col lg:flex-row items-center justify-center gap-10 mt-5"}
       >
         <div>
           <Image
