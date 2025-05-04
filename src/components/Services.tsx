@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function Services() {
   return (
-    <div className={"mt-32 text-center px-10"}>
+    <div className={"mt-32 text-center px-5"}>
       <motion.div
         viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
@@ -13,10 +13,10 @@ export default function Services() {
         className={"w-full flex flex-col items-center relative"}
       >
         <div className={"text-4xl lg:text-5xl font-bold text-primary"}>Services</div>
-        <div className={"text-secondary mt-1 text-xl"}>
+        <div className={"text-secondary mt-1 text-lg lg:text-xl"}>
           Something else in mind? Feel free to ask!
         </div>
-        <div className={"absolute -top-14 right-0 lg:right-30 -z-10"}>
+        <div className={"absolute -top-14 -right-5 lg:right-30 -z-10"}>
           <Star />
         </div>
       </motion.div>

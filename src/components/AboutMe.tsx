@@ -19,7 +19,7 @@ export default function AboutMe() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         className={
-          "w-full max-w-[850px] mx-auto text-2xl text-primary leading-8 flex flex-col gap-7 px-10 text-center lg:text-left"
+          "w-full max-w-[850px] mx-auto text-xl lg:text-2xl text-primary leading-8 flex flex-col gap-7 px-5 text-center lg:text-left"
         }
       >
         <p>

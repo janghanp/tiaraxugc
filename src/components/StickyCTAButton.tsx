@@ -7,7 +7,7 @@ export default function StickyCTAButton() {
     <button
       onClick={clickHandler}
       className={
-        "font-bold hover:cursor-pointer rounded-3xl shadow-lg py-3 px-8 underline text-white bg-primary fixed bottom-10 right-10 hover:bg-secondary transition duration-300"
+        "font-bold hover:cursor-pointer rounded-3xl shadow-lg py-3 px-8 underline text-white bg-primary fixed bottom-5 right-5 hover:bg-secondary transition duration-300"
       }
     >
       Get in touch!

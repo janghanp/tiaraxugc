@@ -48,7 +48,7 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <body
         className={`${vesper.className} antialiased bg-gradient-to-r from-[#efe9e4] via-[#f5f2ef] to-[#dcd4cd] to-80% bg-no-repeat`}
       >

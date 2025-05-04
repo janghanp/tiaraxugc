@@ -15,7 +15,7 @@ export default function Introduction() {
   return (
     <div
       className={
-        "flex flex-col items-center w-full lg:flex-row px-10 gap-10 lg:gap-0 text-center lg:text-left"
+        "flex flex-col items-center w-full lg:flex-row px-5 gap-10 lg:gap-0 text-center lg:text-left"
       }
     >
       <div className={"flex-1"}>
@@ -33,10 +33,10 @@ export default function Introduction() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className={"mt-7 text-4xl lg:text-5xl leading-14  text-neutral-600"}
+          className={"mt-7 text-4xl lg:text-5xl leading-10 lg:leading-14 text-neutral-600"}
         >
           <span className={"inline mb-1.5"}>
-            <span className={"pt-3 -pb-3 px-1.5 rotated-bg leading-12"}>Authentic, soft-toned</span>{" "}
+            <span className={"pt-3 -pb-3 px-1.5 rotated-bg leading-10 lg:leading-12 mb-2 lg:mb-0"}>Authentic, soft-toned</span>{" "}
             UGC{" "}
           </span>
           for <b className={"text-black"}>beauty</b>, <b className={"text-black"}>food</b>, &{" "}
@@ -96,7 +96,7 @@ export default function Introduction() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className={
-            "w-[400px] lg:w-[450px] h-[400px] lg:h-[450px] rounded-full overflow-hidden relative"
+            "w-[300px] lg:w-[450px] h-[300px] lg:h-[450px] rounded-full overflow-hidden relative"
           }
         >
           <Image src={"/images/tiara.png"} alt={"tiara"} fill priority className={"object-cover"} />
