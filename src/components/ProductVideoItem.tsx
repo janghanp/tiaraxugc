@@ -11,7 +11,7 @@ export default function ProductVideoItem({ videoSrc, title1, title2, description
       {videoSrc && (
         <video
           className={"rounded-2xl shadow-2xl"}
-          width={220}
+          width={210}
           height={400}
           src={videoSrc}
           muted
