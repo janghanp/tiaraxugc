@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Domine, Forum, Vesper_Libre } from "next/font/google";
+import { Vesper_Libre } from "next/font/google";
 import "./globals.css";
+import { ReactNode } from "react";
 
 const vesper = Vesper_Libre({
   weight: ["400", "500", "700", "900"],
@@ -44,12 +45,12 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
       <body
-        className={`${vesper.className} antialiased bg-gradient-to-r from-[#efe9e4] via-[#f5f2ef] to-[#dcd4cd] to-80%`}
+        className={`${vesper.className} antialiased bg-gradient-to-r from-[#efe9e4] via-[#f5f2ef] to-[#dcd4cd] to-80% bg-no-repeat`}
       >
         {children}
       </body>

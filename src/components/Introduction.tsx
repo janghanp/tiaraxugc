@@ -13,14 +13,18 @@ const chonburi = Chonburi({
 
 export default function Introduction() {
   return (
-    <div className={"flex items-center w-full"}>
+    <div
+      className={
+        "flex flex-col items-center w-full lg:flex-row px-10 gap-10 lg:gap-0 text-center lg:text-left"
+      }
+    >
       <div className={"flex-1"}>
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className={`text-8xl font-bold curved-underline inline-block text-primary ${chonburi.className}`}
+          className={`text-7xl lg:text-8xl font-bold curved-underline inline-block text-primary ${chonburi.className}`}
         >
           TIARA
         </motion.div>
@@ -29,9 +33,9 @@ export default function Introduction() {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className={"mt-7 text-5xl leading-14  text-neutral-600"}
+          className={"mt-7 text-4xl lg:text-5xl leading-14  text-neutral-600"}
         >
-          <span className={"inline-block mb-1.5"}>
+          <span className={"inline mb-1.5"}>
             <span className={"pt-3 -pb-3 px-1.5 rotated-bg leading-12"}>Authentic, soft-toned</span>{" "}
             UGC{" "}
           </span>
@@ -44,7 +48,7 @@ export default function Introduction() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
           className={
-            "flex flex-1 items-center justify-start gap-5 text-md tracking-wide font-semibold mt-5 text-primary"
+            "flex flex-1 items-center justify-center lg:justify-start gap-5 text-md tracking-wide font-semibold mt-5 text-primary"
           }
         >
           <a
@@ -84,13 +88,16 @@ export default function Introduction() {
           </a>
         </motion.div>
       </div>
-      <div className={"flex-1 flex items-center justify-center"}>
+
+      <div className={"flex-1 flex items-center justify-end"}>
         <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className={"w-[450px] h-[450px] rounded-full overflow-hidden relative"}
+          className={
+            "w-[400px] lg:w-[450px] h-[400px] lg:h-[450px] rounded-full overflow-hidden relative"
+          }
         >
           <Image src={"/images/tiara.png"} alt={"tiara"} fill priority className={"object-cover"} />
         </motion.div>
