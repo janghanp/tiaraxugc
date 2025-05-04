@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 export default function UgcVideos() {
   return (
-    <div className={"mt-32 text-center"}>
+    <div className={"mt-32 text-center px-10 lg:px-0"}>
       <motion.div
         viewport={{ once: true }}
         initial={{ opacity: 0, y: -20 }}
@@ -13,7 +13,7 @@ export default function UgcVideos() {
         className={"flex items-center justify-center gap-3"}
       >
         <TitleHighlightArrow direction={"left"} />
-        <div className={"text-5xl font-bold text-primary"}>UGC video examples</div>
+        <div className={"text-4xl lg:text-5xl font-bold text-primary"}>UGC video examples</div>
         <TitleHighlightArrow direction={"right"} />
       </motion.div>
       <motion.div
@@ -21,7 +21,7 @@ export default function UgcVideos() {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className={"flex w-full gap-5 mt-10 text-secondary"}
+        className={"flex flex-col items-center lg:flex-row w-full gap-5 mt-10 text-secondary"}
       >
         <ProductVideoItem
           videoSrc={"/videos/intro_tiaraxUGC.mp4"}
