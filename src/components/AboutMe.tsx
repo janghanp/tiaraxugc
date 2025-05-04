@@ -19,7 +19,7 @@ export default function AboutMe() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
         className={
-          "w-full max-w-[850px] mx-auto text-2xl text-primary leading-8 flex flex-col gap-7"
+          "w-full max-w-[850px] mx-auto text-2xl text-primary leading-8 flex flex-col gap-7 px-10 text-center lg:text-left"
         }
       >
         <p>
@@ -40,7 +40,7 @@ export default function AboutMe() {
         </p>
         <p>Let’s create something that genuinely connects 🤍</p>
       </motion.div>
-      <div className={"w-full flex items-center justify-center mt-8"}>
+      <div className={"w-full flex items-center justify-center mt-8 px-10"}>
         <UnderlineImage />
       </div>
     </div>
