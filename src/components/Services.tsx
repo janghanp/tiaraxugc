@@ -14,7 +14,12 @@ export default function Services() {
       >
         <div className={"text-4xl lg:text-5xl font-bold text-primary"}>Services</div>
         <div className={"text-secondary mt-1 text-lg lg:text-xl"}>
-          Something else in mind? Feel free to ask!
+          <div>
+            Something else in mind? Feel free to ask!
+          </div>
+          <div>
+            Rates can be discussed via email.
+          </div>
         </div>
         <div className={"absolute -top-14 -right-5 lg:right-30 -z-10"}>
           <Star />
@@ -25,10 +30,10 @@ export default function Services() {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className={"grid grid-cols-1 lg:grid-cols-2 mt-16 gap-20"}
+        className={"flex flex-col mt-16 gap-20 w-full max-w-xl mx-auto"}
       >
         <div className={"col-span-1"}>
-          <div className={"text-center lg:text-left text-2xl font-semibold text-secondary"}>UGC Videos</div>
+          <div className={"text-center lg:text-left text-2xl font-medium text-secondary"}>UGC Videos</div>
           <div className={"grid grid-cols-2 lg:grid-cols-3 gap-3 w-full mt-3"}>
             <ServiceItem title={"Paid ads"} />
             <ServiceItem title={"Unboxing"} />
@@ -39,7 +44,7 @@ export default function Services() {
           </div>
         </div>
         <div className={"col-span-1"}>
-          <div className={"text-center lg:text-left text-2xl font-semibold text-secondary"}>Add-ons</div>
+          <div className={"text-center lg:text-left text-2xl font-medium text-secondary"}>Add-ons</div>
           <div className={"grid grid-cols-2 lg:grid-cols-3 gap-3 w-full mt-3"}>
             <ServiceItem title={"Scriptwriting"} />
             <ServiceItem title={"Whitelisting"} />
